@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ofsystem.capsofbackend.entity.Clase_Usuarios;
 import com.ofsystem.capsofbackend.service.IUsuariosService;
 
+
+
 @RestController
 public class UsuariosController {
 	@Autowired

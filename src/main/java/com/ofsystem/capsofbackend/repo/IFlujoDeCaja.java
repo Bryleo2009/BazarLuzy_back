@@ -1,8 +1,8 @@
 package com.ofsystem.capsofbackend.repo;
 
-import com.ofsystem.capsofbackend.entity.Clase_Usuarios;
+import com.ofsystem.capsofbackend.entity.Clase_FlujoCaja;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface IUsuarios extends JpaRepository<Clase_Usuarios, Integer>{
+public interface IFlujoDeCaja extends JpaRepository<Clase_FlujoCaja, Integer>{
     
 }

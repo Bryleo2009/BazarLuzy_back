@@ -6,43 +6,47 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ofsystem.capsofbackend.entity.Clase_Usuarios;
-import com.ofsystem.capsofbackend.repo.IUsuarios;
-import com.ofsystem.capsofbackend.service.IUsuariosService;
+import com.ofsystem.capsofbackend.entity.Clase_FlujoCaja;
+import com.ofsystem.capsofbackend.repo.IFlujoDeCaja;
+import com.ofsystem.capsofbackend.service.IFlujoDeCajaService;
 
 @Service
-public class UsuariosServiceImpl implements IUsuariosService{
+public class FlujoDeCajaServiceImpl implements IFlujoDeCajaService{
 
 	@Autowired
-	public IUsuarios repo;
+	public IFlujoDeCaja repo;
+
 	@Override
-	public Clase_Usuarios registrar(Clase_Usuarios t) {
+	public Clase_FlujoCaja registrar(Clase_FlujoCaja t) {
 		// TODO Auto-generated method stub
 		return repo.save(t);
 	}
 
 	@Override
-	public Clase_Usuarios modificar(Clase_Usuarios t) {
+	public Clase_FlujoCaja modificar(Clase_FlujoCaja t) {
 		// TODO Auto-generated method stub
 		return repo.save(t);
 	}
 
 	@Override
-	public Optional<Clase_Usuarios> leer(Clase_Usuarios t) {
+	public Optional<Clase_FlujoCaja> leer(Clase_FlujoCaja t) {
 		// TODO Auto-generated method stub
-		return repo.findById(t.getId_usuario());
+		return repo.findById(t.getId_cp());
 	}
 
 	@Override
-	public List<Clase_Usuarios> listar() {
+	public List<Clase_FlujoCaja> listar() {
 		// TODO Auto-generated method stub
 		return repo.findAll();
 	}
 
 	@Override
-	public void eliminar(Clase_Usuarios t) {
+	public void eliminar(Clase_FlujoCaja t) {
 		// TODO Auto-generated method stub
 		repo.delete(t);
 	}
+	
+
+
     
 }

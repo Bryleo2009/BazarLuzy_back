@@ -1,4 +1,4 @@
-package com.ofsystem.capsofbackend.controller;
+package com.ofsystem.capsofbackend.repo;
 
 import java.util.List;
 import java.util.Optional;

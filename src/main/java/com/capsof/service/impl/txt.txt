@@ -1,0 +1,12 @@
+Impl
+
+extends CRUDImpl<, Integer> implements 
+
+@Autowired
+private  repo;
+
+@Override
+public Optional<> leer( t) {
+	// TODO Auto-generated method stub
+	return repo.findById(t.getId);
+}

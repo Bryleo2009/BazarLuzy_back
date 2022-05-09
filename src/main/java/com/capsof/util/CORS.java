@@ -1,4 +1,4 @@
-package com.ofsystem.capsofbackend.util;
+package com.capsof.util;
 
 import java.io.IOException;
 

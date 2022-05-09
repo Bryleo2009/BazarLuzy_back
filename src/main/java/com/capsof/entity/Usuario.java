@@ -25,6 +25,19 @@ public class Usuario {
 	private String password;
 	
 	private boolean estado;
+	
+	@Column(name = "cargo", nullable = false, length = 100)
+    @Size(min = 3, message = "Nombre min de 3 caracter")
+	private String cargo;
+	
+
+	public String getCargo() {
+		return cargo;
+	}
+
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
 
 	public int getId_usuario() {
 		return id_usuario;

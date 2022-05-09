@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ofsystem.capsofbackend.entity.Clase_Usuarios;
 import com.ofsystem.capsofbackend.service.IUsuariosService;
 
+
+
 @RestController
 public class UsuariosController {
 	@Autowired
@@ -24,8 +26,12 @@ public class UsuariosController {
     http://127.0.0.1:8080/api/users*/
 	@GetMapping("/Clase_Usuarios")
 	public List<Clase_Usuarios> listar() {
-		return service.listar();
-		
+		return service.listar();		
+	}
+	
+	@GetMapping("/usuarios")
+	public String indexUsuario() {
+		return "usuarios";
 	}
 	
 	/*Este método se hará cuando por una petición GET (como indica la anotación) se llame a la url + el id de un usuario
